@@ -24,12 +24,13 @@
     - 에러감지 : checksum 활용하여 에러 확인.
   * 일정 시간 ACK 값이 수신을 하지 못한 경우, 재전송 요청(Timeout-based Retransmission)
   
-  * 참고
-    - SYN : Synchronize Sequence Number
-    - ACK : Acknowledgement
-    - 3-way handshacking
-      + 가장 처음, 송신측에서 'SYN' 플래그로 상대에게 접속하고 동시에 패킷을 보냄.
-      + 그다음, 수신측에서 'SYN/ACK' 플래그로 송신측에게 접속하고 패킷받은 사실 보냄.
-      + 마지막으로 송신측이 'ACK' 플래그 보내 패킷교환 완료 전함.
-      + 이 과정에서 어디선가 통신이 도중 끊어지면 TCP는 같은 순서로 패킷 다시 전송함.
+  ## 참고
+    * SYN : Synchronize Sequence Number
+    * ACK : Acknowledgement
+    * 3-way handshacking
+      - 가장 처음, 송신측에서 'SYN' 플래그로 상대에게 접속하고 동시에 패킷을 보냄.
+      - 그다음, 수신측에서 'SYN/ACK' 플래그로 송신측에게 접속하고 패킷받은 사실 보냄.
+      - 마지막으로 송신측이 'ACK' 플래그 보내 패킷교환 완료 전함.
+      - 이 과정에서 어디선가 통신이 도중 끊어지면 TCP는 같은 순서로 패킷 다시 전송함.
+      
   
